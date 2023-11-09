@@ -36,7 +36,6 @@ print("last 5 rows of pandas dataframe: ", "\n", df.tail(), "\n")
 # plot Greek GDP
 fig, ax = plt.subplots()
 ax.plot(df["year"], df["gdp"], linestyle="--", marker="o")
-# ax.stem(df["gdp"], markerfmt='--')
 first_year = min(df["year"])
 last_year = max(df["year"])
 ax.set_title(f"Greek GDP in USD($) from {first_year} until {last_year}", fontweight="bold")
